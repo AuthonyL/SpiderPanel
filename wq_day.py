@@ -1,4 +1,4 @@
-"""WorldQuant days use New York calendar midnights; log files use local dates."""
+"""WQ days use New York calendar midnights; log files use local dates."""
 
 from dataclasses import dataclass
 from datetime import date, datetime, time as day_time, timedelta

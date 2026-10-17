@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "spiderpanel"
 version = "0.1.0"
-description = "用于观察本地 WorldQuant BRAIN 挖掘会话的回环仪表盘"
+description = "用于观察本地 WQ BRAIN 挖掘会话的回环仪表盘"
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}

@@ -1,10 +1,10 @@
 # SpiderPanel
 
-用于观察本地 WorldQuant BRAIN alpha 挖掘会话的回环仪表盘，支持日志回放和独立演示。
+用于观察本地 WQ BRAIN alpha 挖掘会话的回环仪表盘，支持日志回放和独立演示。
 
 ![](docs/screenshot.png)
 
-本项目非 WorldQuant 官方项目，与 WorldQuant 无关联。面板只监听 `127.0.0.1`，不访问 WQ 平台，不上传任何数据。前端使用原生 JavaScript 和本地 SVG，无构建步骤或外部资源依赖；运行时使用 Python >= 3.11 标准库；系统还须提供含 `America/New_York` 的 IANA 时区数据库，macOS 和多数 Linux 通常已具备。缺少该数据库时需先配置系统时区数据。
+本项目非 WQ 官方项目，与 WQ 无关联。面板只监听 `127.0.0.1`，不访问 WQ 平台，不上传任何数据。前端使用原生 JavaScript 和本地 SVG，无构建步骤或外部资源依赖；运行时使用 Python >= 3.11 标准库；系统还须提供含 `America/New_York` 的 IANA 时区数据库，macOS 和多数 Linux 通常已具备。缺少该数据库时需先配置系统时区数据。
 
 ## 快速开始
 
