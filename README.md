@@ -120,11 +120,11 @@ CLI 路径覆盖对应配置；重复的 `--candidates-file` 组成新的完整�
 仓库目录名须保持 `SpiderPanel`。从上一级目录执行：
 
 ```bash
-python -m pip install pytest mcp
+python -m pip install pytest "mcp<2"
 python -m pytest SpiderPanel/test -q
 ```
 
-MCP 是可选测试依赖，未安装时跳过对应装饰器测试。Node.js 用于无依赖的前端结构测试，未找到时跳过；可选的 Playwright 测试需要安装相应 Python 包与 Chromium，缺失时跳过。HTTP 集成测试在沙箱禁止监听时也会跳过；无需监听的请求处理测试仍会执行。
+`mcp<2`（1.x，测试使用 FastMCP）是可选测试依赖，未安装或缺少 `mcp.server.fastmcp` 时跳过对应装饰器测试。Node.js 用于无依赖的前端结构测试，未找到时跳过；可选的 Playwright 测试需要安装相应 Python 包与 Chromium，缺失时跳过。HTTP 集成测试在沙箱禁止监听时也会跳过；无需监听的请求处理测试仍会执行。
 
 `SPIDERPANEL_SERVER_FILE` 可指定外部工具服务器的 Python 文件，用 AST 检查六个内置函数的装饰器范围与顺序；不设置时跳过，不会导入或执行该文件。pytest 中只有显式设置 `WQ_SPIDER_DIR` 才会记录日志，防止测试污染默认目录。
 

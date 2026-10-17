@@ -11,7 +11,7 @@ from concurrent.futures import ThreadPoolExecutor
 from typing import get_type_hints
 
 import pytest
-pytest.importorskip("mcp")
+pytest.importorskip("mcp.server.fastmcp")
 from mcp.server.fastmcp import Context, FastMCP
 from mcp.types import CallToolResult, TextContent
 

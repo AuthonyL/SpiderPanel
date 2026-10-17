@@ -12,7 +12,7 @@ license = {text = "MIT"}
 dependencies = []
 
 [project.optional-dependencies]
-test = ["pytest", "mcp", "playwright"]
+test = ["pytest", "mcp<2", "playwright"]
 
 [project.scripts]
 spiderpanel = "SpiderPanel.server:main"
