@@ -1,0 +1,17 @@
+{
+  "is_diverse": true,
+  "status": "pass",
+  "operator_count_limit": 17,
+  "recommendations": [
+    "示例表达式组检查通过"
+  ],
+  "expression_features": [
+    {
+      "expression": "sample_expression_01",
+      "resolved_datafields": [
+        "sample_field"
+      ],
+      "raw_operator_count": 2
+    }
+  ]
+}

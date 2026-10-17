@@ -1,0 +1,20 @@
+.scene-canvas {position:relative;width:100%;height:100%;aspect-ratio:2/1;flex:none;isolation:isolate;overflow:hidden;contain:layout paint}
+.scene-canvas>.scene-background {display:block;width:100%;height:100%}
+.scene-sprites {position:absolute;left:0;top:0;width:1200px;height:670px;transform-origin:0 0;pointer-events:none;font-family:"SF Mono",Menlo,"PingFang SC",monospace}
+.scene-sprite-group {display:contents}
+.scene-web-clip {position:absolute;overflow:hidden;pointer-events:none;contain:layout paint}
+/* Flight transforms belong to the child. Its stationary positioning host must
+   not clip that child at the starting position. Only the small bitmap clips. */
+.scene-sprite {position:absolute;left:0;top:0;pointer-events:none}
+.sprite-motion {position:relative;contain:size layout paint;transform-origin:50% 50%}
+.sprite-motion>svg {display:block;overflow:hidden}
+[data-scene] .wq-hit {cursor:pointer;outline:none}
+[data-scene] .wq-hit:focus-visible .wq-focus {stroke:#fff;stroke-width:2;stroke-opacity:1}
+[data-scene] .wq-hit:hover .wq-focus {stroke:#fff;stroke-opacity:.9}
+.scene-sprites text {pointer-events:none;user-select:none}
+.scene-sprites .wq-hit,.scene-sprites .wq-session {pointer-events:auto}
+.scene-sprites [data-active="true"] .wq-bubble {opacity:1}
+.scene-sprites[data-paused="true"] * {animation-play-state:paused!important;transition:none!important}
+@media(max-width:1439px){.scene-stage>.scene-canvas{height:auto;aspect-ratio:2/1}.scene-canvas>.scene-background{height:auto;aspect-ratio:2/1}}
+@media(max-width:899px){.scene-stage>.scene-canvas{min-width:820px}.scene-canvas>.scene-background{min-width:820px}}
+@media(prefers-reduced-motion:reduce){.scene-sprites *{animation:none!important;transition:none!important}}

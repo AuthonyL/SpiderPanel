@@ -1,0 +1,14 @@
+{
+  "result": {
+    "id": "alpha_prod",
+    "regular": {
+      "code": "rank(close)"
+    },
+    "is": {
+      "sharpe": 1.32,
+      "fitness": 0.6,
+      "turnover": 0.1953
+    },
+    "prod": null
+  }
+}

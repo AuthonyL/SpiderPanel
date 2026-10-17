@@ -1,0 +1,18 @@
+{
+  "progress_file": "~/path/to/multi_simulation_progress.json",
+  "candidate_files": ["~/path/to/candidates.jsonl"],
+  "daily_goal": 5,
+  "thresholds": {
+    "source": "公开提交指标示例；具体适用条件以平台说明为准",
+    "hard": [
+      {"key": "turnover_min", "value": 0.01, "note": "Turnover 下限"},
+      {"key": "turnover_max", "value": 0.7, "note": "Turnover 上限"},
+      {"key": "prod_corr_max", "value": 0.7, "note": "Prod Correlation 必须严格低于"}
+    ],
+    "soft": {
+      "tier_sharpe": 1.25,
+      "standard": {"sharpe": 1.25, "fitness": 1.0},
+      "high": {"sharpe": 1.25, "fitness": 1.0}
+    }
+  }
+}

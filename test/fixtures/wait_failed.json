@@ -1,0 +1,26 @@
+{
+  "success": false,
+  "status": "failed",
+  "message": "Not found.",
+  "total_created": 0,
+  "multisimulation_id": "sim_missing",
+  "multisimulation_location": "https://example.invalid/simulations/sim_missing",
+  "children": [],
+  "alpha_results": [],
+  "failure": {
+    "location": "https://example.invalid/simulations/sim_missing",
+    "error": "Not found.",
+    "raw": {
+      "detail": "Not found."
+    }
+  },
+  "sim_error_details": {
+    "results": [
+      {
+        "location": "https://example.invalid/simulations/sim_missing",
+        "error": "HTTP 404",
+        "raw": "{\"detail\":\"Not found.\"}"
+      }
+    ]
+  }
+}

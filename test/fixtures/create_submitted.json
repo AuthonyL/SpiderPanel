@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "status": "submitted",
+  "submission_backend": "wqb",
+  "message": "Multisimulation submitted with wqb. Call local_wait_multi_simulation with multisimulation_location.",
+  "total_requested": 8,
+  "multisimulation_id": "sim_demo",
+  "multisimulation_location": "https://example.invalid/simulations/sim_demo",
+  "workflow_id": "workflow_demo",
+  "slot_cost": 1,
+  "active_slots_after_submit": 3
+}

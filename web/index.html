@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1c1522">
+  <title>WQ Alpha Factory · Mining floor</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/app.css">
+  <link rel="stylesheet" href="/layers.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <main id="factory-app" class="factory-app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M4 8l5 16 7-12 7 12 5-16M6 27h21" fill="none" stroke="currentColor" stroke-width="3"/></svg></div>
+        <div><h1>WQ ALPHA FACTORY</h1><p id="factory-subtitle">0 SESSIONS MINING · 0 SIMS · 0 PICKS</p></div>
+      </div>
+      <div class="goal-block">
+        <div class="goal-caption"><span id="goal-label">今日候选 0/5</span><strong id="goal-percent">0%</strong></div>
+        <div id="goal-meter" class="goal-meter" role="progressbar" aria-label="今日候选目标" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="goal-fill"></span></div>
+      </div>
+      <div class="header-right"><span id="day-label" class="day-label">WQ DAY · —</span><span id="reset-countdown" class="reset-countdown">重置 —</span><time id="clock">00:00:00</time><span id="connection" class="connection reconnecting" role="status"><i></i><span>CONNECTING</span></span></div>
+    </header>
+    <section id="role-cards" class="role-cards" aria-label="挖掘流水线角色"></section>
+    <div class="work-grid">
+      <section class="panel floor-panel" aria-labelledby="floor-title">
+        <div class="panel-bar"><h2 id="floor-title"><span class="live-square"></span> THE MINING FLOOR</h2><span id="floor-summary">0 ONLINE · 0 IN FLIGHT</span></div>
+        <div class="scene-stage"><svg id="factory-scene" viewBox="0 35 1200 600" role="img" aria-label="由挖掘会话和 alpha 状态驱动的等距交易大厅"></svg></div>
+        <span class="scene-scroll-hint" aria-hidden="true">← 滑动查看 →</span>
+        <div class="floor-footer"><span><i class="status-dot pink"></i> GENERATE → TEST → PICK</span><div id="event-captions" class="event-captions" aria-live="polite" aria-label="当前事件字幕"></div><span id="floor-status">等待挖掘会话加入</span></div>
+      </section>
+      <section class="panel output-panel" aria-labelledby="output-title">
+        <div class="panel-bar"><h2 id="output-title">TODAY · OUTPUT</h2></div>
+        <svg id="output-chart" viewBox="0 0 600 220" role="img" aria-label="每 15 分钟完成的回测批次，红色表示该桶有回测失败"></svg>
+        <div class="chart-foot"><span>15 MIN / BUCKET</span><span id="output-note">等待第一批回测</span></div>
+      </section>
+      <section class="panel analysis-panel" aria-labelledby="analysis-title">
+        <div class="panel-bar"><h2 id="analysis-title">ALPHA ANALYSIS</h2><span id="analysis-count">0 ALPHAS SCANNED</span></div>
+        <div class="analysis-body">
+          <div class="scatter-section"><div id="analysis-stats" class="analysis-stats"></div><div class="scatter-wrap"><svg id="scatter-chart" viewBox="0 0 1000 180" role="img" aria-label="Sharpe 与 Fitness 散点图，可点击 alpha 查看详情"></svg></div></div>
+        </div>
+      </section>
+    </div>
+    <footer class="page-footer"><span>LOCAL DESK · YOUR DATA STAYS HERE</span><span id="updated-label">等待连接 · 仅显示已送去回测的表达式</span></footer>
+  </main>
+  <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+  <div id="drawer-overlay" class="drawer-overlay" hidden>
+    <button id="drawer-backdrop" class="drawer-backdrop" aria-label="关闭详情"></button>
+    <aside id="alpha-drawer" class="alpha-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" tabindex="-1">
+      <header class="drawer-header"><span>ALPHA · INSPECT</span><button id="drawer-close" class="icon-button" aria-label="关闭详情">×</button></header>
+      <h2 id="drawer-title">—</h2><span id="drawer-status" class="status-badge">—</span>
+      <div class="expression-heading"><h3>EXPRESSION</h3><button id="copy-expression" class="copy-button">复制表达式</button></div><pre id="drawer-expression" tabindex="0">暂无表达式</pre>
+      <div id="drawer-metrics" class="drawer-metrics"></div><dl id="drawer-fields" class="drawer-fields"></dl>
+      <p class="drawer-note">候选表示等待你的复核，尚未提交 WQ 平台。</p>
+    </aside>
+  </div>
+  <noscript>此本地仪表盘需要 JavaScript 才能展示实时状态。</noscript>
+</body>
+</html>

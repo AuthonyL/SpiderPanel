@@ -1,0 +1,162 @@
+{
+  "success": true,
+  "status": "completed",
+  "message": "Multisimulation completed with 8 alpha results.",
+  "total_created": 8,
+  "multisimulation_id": "sim_demo",
+  "multisimulation_location": "https://example.invalid/simulations/sim_demo",
+  "alpha_results": [
+    {
+      "alpha_id": "alpha_01",
+      "location": "https://example.invalid/simulations/child_01",
+      "details": {
+        "id": "alpha_01",
+        "regular": {
+          "code": "rank(close)"
+        },
+        "is": {
+          "sharpe": 0.04,
+          "fitness": 0.0,
+          "turnover": 0.8638,
+          "pnl": 228777
+        },
+        "settings": {
+          "region": "ASI"
+        }
+      }
+    },
+    {
+      "alpha_id": "alpha_02",
+      "location": "https://example.invalid/simulations/child_02",
+      "details": {
+        "id": "alpha_02",
+        "regular": {
+          "code": "ts_delta(volume, 5)"
+        },
+        "is": {
+          "sharpe": 0.02,
+          "fitness": 0.0,
+          "turnover": 0.6583,
+          "pnl": 116874
+        },
+        "settings": {
+          "region": "ASI"
+        }
+      }
+    },
+    {
+      "alpha_id": "alpha_03",
+      "location": "https://example.invalid/simulations/child_03",
+      "details": {
+        "id": "alpha_03",
+        "regular": {
+          "code": "rank(open)"
+        },
+        "is": {
+          "sharpe": -0.17,
+          "fitness": -0.02,
+          "turnover": 0.6619,
+          "pnl": -824118
+        },
+        "settings": {
+          "region": "ASI"
+        }
+      }
+    },
+    {
+      "alpha_id": "alpha_04",
+      "location": "https://example.invalid/simulations/child_04",
+      "details": {
+        "id": "alpha_04",
+        "regular": {
+          "code": "rank(high)"
+        },
+        "is": {
+          "sharpe": -0.33,
+          "fitness": -0.04,
+          "turnover": 0.8203,
+          "pnl": -1351568
+        },
+        "settings": {
+          "region": "ASI"
+        }
+      }
+    },
+    {
+      "alpha_id": "alpha_05",
+      "location": "https://example.invalid/simulations/child_05",
+      "details": {
+        "id": "alpha_05",
+        "regular": {
+          "code": "rank(low)"
+        },
+        "is": {
+          "sharpe": -0.49,
+          "fitness": -0.11,
+          "turnover": 0.3748,
+          "pnl": -1944363
+        },
+        "settings": {
+          "region": "ASI"
+        }
+      }
+    },
+    {
+      "alpha_id": "alpha_06",
+      "location": "https://example.invalid/simulations/child_06",
+      "details": {
+        "id": "alpha_06",
+        "regular": {
+          "code": "ts_mean(close, 10)"
+        },
+        "is": {
+          "sharpe": 0.49,
+          "fitness": 0.09,
+          "turnover": 0.8042,
+          "pnl": 2659478
+        },
+        "settings": {
+          "region": "ASI"
+        }
+      }
+    },
+    {
+      "alpha_id": "alpha_07",
+      "location": "https://example.invalid/simulations/child_07",
+      "details": {
+        "id": "alpha_07",
+        "regular": {
+          "code": "rank(volume)"
+        },
+        "is": {
+          "sharpe": 0.52,
+          "fitness": 0.09,
+          "turnover": 0.8191,
+          "pnl": 2518739
+        },
+        "settings": {
+          "region": "ASI"
+        }
+      }
+    },
+    {
+      "alpha_id": "alpha_08",
+      "location": "https://example.invalid/simulations/child_08",
+      "details": {
+        "id": "alpha_08",
+        "regular": {
+          "code": "ts_delta(close, 2)"
+        },
+        "is": {
+          "sharpe": 0.39,
+          "fitness": 0.06,
+          "turnover": 0.8191,
+          "pnl": 1787771
+        },
+        "settings": {
+          "region": "ASI"
+        }
+      }
+    }
+  ]
+}

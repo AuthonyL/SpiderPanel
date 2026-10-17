@@ -1,0 +1,14 @@
+{
+  "success": false,
+  "status": "validation_failed",
+  "error": "❌ 表达式组检查未通过，未提交回测",
+  "validation_result": {
+    "is_diverse": false,
+    "status": "fail",
+    "operator_count_limit": 17,
+    "recommendations": [
+      "示例表达式组未通过检查"
+    ],
+    "expression_features": []
+  }
+}

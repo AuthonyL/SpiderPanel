@@ -1,0 +1,264 @@
+{
+  "has_best": false,
+  "best_expression": null,
+  "best_alpha_id": null,
+  "best_score": 0.0,
+  "summary": {
+    "total": 8,
+    "passed": 0,
+    "failed": 8,
+    "best_score": 0.0
+  },
+  "all_alphas": [
+    {
+      "alpha_id": "alpha_01",
+      "expression": "rank(close)",
+      "region": "ASI",
+      "sharpe": -0.82,
+      "fitness": -0.39,
+      "eval_passed": false,
+      "eval_score": -1.21,
+      "eval_tier": "standard",
+      "eval_is_reversed": false,
+      "is_submission_ready": false,
+      "blocking_warnings": [],
+      "blocking_failures": [
+        {
+          "name": "LOW_SHARPE",
+          "value": -0.82,
+          "limit": 1.25,
+          "ratio": null
+        }
+      ],
+      "failed_checks": [
+        "sharpe",
+        "fitness",
+        "margin",
+        "sub_universe_sharpe",
+        "low_2y_sharpe",
+        "robust_universe_sharpe",
+        "robust_universe_returns",
+        "asi_jpn_sharpe",
+        "yearly_stats"
+      ]
+    },
+    {
+      "alpha_id": "alpha_02",
+      "expression": "ts_delta(volume, 5)",
+      "region": "ASI",
+      "sharpe": -0.65,
+      "fitness": -0.24,
+      "eval_passed": false,
+      "eval_score": -0.89,
+      "eval_tier": "standard",
+      "eval_is_reversed": false,
+      "is_submission_ready": false,
+      "blocking_warnings": [],
+      "blocking_failures": [
+        {
+          "name": "LOW_SHARPE",
+          "value": -0.65,
+          "limit": 1.25,
+          "ratio": null
+        }
+      ],
+      "failed_checks": [
+        "sharpe",
+        "fitness",
+        "margin",
+        "sub_universe_sharpe",
+        "low_2y_sharpe",
+        "robust_universe_sharpe",
+        "robust_universe_returns",
+        "asi_jpn_sharpe",
+        "yearly_stats"
+      ]
+    },
+    {
+      "alpha_id": "alpha_03",
+      "expression": "rank(open)",
+      "region": "ASI",
+      "sharpe": -0.85,
+      "fitness": -0.37,
+      "eval_passed": false,
+      "eval_score": -1.22,
+      "eval_tier": "standard",
+      "eval_is_reversed": false,
+      "is_submission_ready": false,
+      "blocking_warnings": [],
+      "blocking_failures": [
+        {
+          "name": "LOW_SHARPE",
+          "value": -0.85,
+          "limit": 1.25,
+          "ratio": null
+        }
+      ],
+      "failed_checks": [
+        "sharpe",
+        "fitness",
+        "margin",
+        "sub_universe_sharpe",
+        "low_2y_sharpe",
+        "asi_jpn_sharpe",
+        "yearly_stats"
+      ]
+    },
+    {
+      "alpha_id": "alpha_04",
+      "expression": "rank(high)",
+      "region": "ASI",
+      "sharpe": -0.81,
+      "fitness": -0.33,
+      "eval_passed": false,
+      "eval_score": -1.14,
+      "eval_tier": "standard",
+      "eval_is_reversed": false,
+      "is_submission_ready": false,
+      "blocking_warnings": [],
+      "blocking_failures": [
+        {
+          "name": "LOW_SHARPE",
+          "value": -0.81,
+          "limit": 1.25,
+          "ratio": null
+        }
+      ],
+      "failed_checks": [
+        "sharpe",
+        "fitness",
+        "margin",
+        "sub_universe_sharpe",
+        "low_2y_sharpe",
+        "concentrated_weight",
+        "robust_universe_sharpe",
+        "robust_universe_returns",
+        "asi_jpn_sharpe",
+        "yearly_stats"
+      ]
+    },
+    {
+      "alpha_id": "alpha_05",
+      "expression": "rank(low)",
+      "region": "ASI",
+      "sharpe": -0.44,
+      "fitness": -0.18,
+      "eval_passed": false,
+      "eval_score": -0.62,
+      "eval_tier": "standard",
+      "eval_is_reversed": false,
+      "is_submission_ready": false,
+      "blocking_warnings": [],
+      "blocking_failures": [
+        {
+          "name": "LOW_SHARPE",
+          "value": -0.44,
+          "limit": 1.25,
+          "ratio": null
+        }
+      ],
+      "failed_checks": [
+        "sharpe",
+        "fitness",
+        "margin",
+        "sub_universe_sharpe",
+        "low_2y_sharpe",
+        "asi_jpn_sharpe",
+        "yearly_stats"
+      ]
+    },
+    {
+      "alpha_id": "alpha_06",
+      "expression": "ts_mean(close, 10)",
+      "region": "ASI",
+      "sharpe": 0.06,
+      "fitness": 0.01,
+      "eval_passed": false,
+      "eval_score": 0.07,
+      "eval_tier": "standard",
+      "eval_is_reversed": false,
+      "is_submission_ready": false,
+      "blocking_warnings": [],
+      "blocking_failures": [
+        {
+          "name": "LOW_SHARPE",
+          "value": 0.06,
+          "limit": 1.25,
+          "ratio": null
+        }
+      ],
+      "failed_checks": [
+        "sharpe",
+        "fitness",
+        "margin",
+        "sub_universe_sharpe",
+        "low_2y_sharpe",
+        "robust_universe_sharpe",
+        "robust_universe_returns",
+        "asi_jpn_sharpe",
+        "yearly_stats"
+      ]
+    },
+    {
+      "alpha_id": "alpha_07",
+      "expression": "rank(volume)",
+      "region": "ASI",
+      "sharpe": -0.07,
+      "fitness": -0.01,
+      "eval_passed": false,
+      "eval_score": -0.08,
+      "eval_tier": "standard",
+      "eval_is_reversed": false,
+      "is_submission_ready": false,
+      "blocking_warnings": [],
+      "blocking_failures": [
+        {
+          "name": "LOW_SHARPE",
+          "value": -0.07,
+          "limit": 1.25,
+          "ratio": null
+        }
+      ],
+      "failed_checks": [
+        "sharpe",
+        "fitness",
+        "margin",
+        "sub_universe_sharpe",
+        "low_2y_sharpe",
+        "asi_jpn_sharpe",
+        "yearly_stats"
+      ]
+    },
+    {
+      "alpha_id": "alpha_08",
+      "expression": "ts_delta(close, 2)",
+      "region": "ASI",
+      "sharpe": -0.55,
+      "fitness": -0.37,
+      "eval_passed": false,
+      "eval_score": -0.92,
+      "eval_tier": "standard",
+      "eval_is_reversed": false,
+      "is_submission_ready": false,
+      "blocking_warnings": [],
+      "blocking_failures": [
+        {
+          "name": "LOW_SHARPE",
+          "value": -0.55,
+          "limit": 1.25,
+          "ratio": null
+        }
+      ],
+      "failed_checks": [
+        "sharpe",
+        "fitness",
+        "margin",
+        "sub_universe_sharpe",
+        "low_2y_sharpe",
+        "asi_jpn_sharpe",
+        "yearly_stats"
+      ]
+    }
+  ],
+  "recommendation": "No alpha passed; retry with different expressions."
+}

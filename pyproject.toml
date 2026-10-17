@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spiderpanel"
+version = "0.1.0"
+description = "用于观察本地 WorldQuant BRAIN 挖掘会话的回环仪表盘"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest", "mcp", "playwright"]
+
+[project.scripts]
+spiderpanel = "SpiderPanel.server:main"
+
+[project.urls]
+Repository = "https://github.com/AuthonyL/SpiderPanel"
+
+[tool.setuptools]
+package-dir = {"SpiderPanel" = "."}
+packages = ["SpiderPanel"]
+include-package-data = false
+
+[tool.setuptools.package-data]
+SpiderPanel = ["web/*"]

@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-01-01T00:00:00",
+  "alpha_id": "alpha_rejected",
+  "precheck_passed": false,
+  "precheck_result": {},
+  "all_checks_passed": false,
+  "check_result": null,
+  "saved_locally": false,
+  "saved_result_file": null,
+  "error": null
+}
